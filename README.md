@@ -6,4 +6,4 @@ The following is a list of the games that I've currently uploaded: <br>
   -Tag<br>
   -Meteor Blaster<br>
 <br>
-*hint: I recomment meteor blaster. It's super fun even though its still in progress (and to be honest tag is kinda bad).*
+*Update: Meteor Blaster is no longer in progress!*
