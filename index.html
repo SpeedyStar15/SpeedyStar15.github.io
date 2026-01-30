@@ -4,24 +4,21 @@
   <meta charset="UTF-8">
   <title>My Apps</title>
 </head>
+
 <style>
   body {
-	  background: linear-gradient(-45deg, #89CFF0, #23d5ab, #aaaafa, #91aae6);
-	  background-size: 400% 400%;
-	  animation: gradient 15s ease infinite;
-	  height: 100vh;
+    background: linear-gradient(-45deg, #89CFF0, #23d5ab, #aaaafa, #91aae6);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
   }
+
   @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
+
   h1 {
     font-family: arial;
     background-color: #f9a83a;
@@ -32,49 +29,75 @@
     box-shadow: 2px 2px 3px black inset;
     display: inline-block;
   }
+
+  h2 {
+    font-family: arial;
+    background-color: #f9a83a;
+    color: black;
+    padding: 4px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 2px 2px 3px black inset;
+    margin-top: 40px;
+  }
+
+  .category {
+    margin-top: 20px;
+  }
+
+  .button-list {
+    margin-top: 20px;
+  }
+
   button {
     font-family: arial;
     background-color: #f9a83a;
     border: none;
     border-radius: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 5px 10px;
     transition: transform 0.3s ease-in-out;
-	margin-bottom: 20px;
-    margin-left: 30px;
+    margin-bottom: 25px;
     transform: scale(2);
     box-shadow: 2px 2px 3px;
-    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
+
   button:hover {
     background-color: color-mix(in srgb, #f9a83a, white 20%);
     transform: scale(2.5);
   }
 </style>
+
 <body>
   <div style="text-align: center">
     <h1>Ezra's Scratch Projects</h1>
-    <br>
-    <button onclick="location.href='https://speedystar15.github.io/tag/'">
-      <strong>Tag</strong>
-    </button>
-	<br>
-	<br>
-	<br>
-	<button onclick="location.href='https://speedystar15.github.io/meteor-blaster/'">
-		<strong>Meteor Blaster</strong>
-	</button>
+
+    <!-- Games Category -->
+    <div class="category">
+      <h2>Games</h2>
+      <div class="button-list">
+        <button onclick="location.href='https://speedystar15.github.io/tag/'">
+          <strong>Tag</strong>
+        </button>
+
+        <button onclick="location.href='https://speedystar15.github.io/meteor-blaster/'">
+          <strong>Meteor Blaster</strong>
+        </button>
+      </div>
+    </div>
+
+    <!-- Experiments Category -->
+    <div class="category">
+      <h2>Experiments</h2>
+      <div class="button-list">
+        <button onclick="location.href='https://speedystar15.github.io/random-word-generator/'">
+          <strong>Random Word Generator</strong>
+        </button>
+      </div>
+    </div>
+
   </div>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
